@@ -2,24 +2,51 @@
   "name": "local_video_streamer",
   "version": "1.0.0",
   "description": "Local Video Streamer",
-  "main": "index.js",
+  "homepage": ".",
   "scripts": {
-    "start": "node server.js"
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject",
+    "run-server": "node server/index.js"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/Alcantara98/local_video_streamer.git"
+  "eslintConfig": {
+    "extends": [
+      "react-app",
+      "react-app/jest"
+    ]
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
   },
   "author": "Elbert Alcantara",
   "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/Alcantara98/local_video_streamer/issues"
-  },
-  "homepage": "https://github.com/Alcantara98/local_video_streamer#readme",
   "dependencies": {
+    "@babel/preset-env": "^7.20.2",
+    "@babel/preset-react": "^7.18.6",
+    "@babel/register": "^7.18.9",
+    "@testing-library/jest-dom": "^5.16.5",
+    "@testing-library/react": "^13.4.0",
+    "@testing-library/user-event": "^13.5.0",
     "create-react-app": "5.0.1",
     "express": "4.18.2",
-    "nodemon": "2.0.20"
+    "ignore-styles": "^5.0.1",
+    "nodemon": "2.0.20",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "react-player": "^2.11.0",
+    "react-scripts": "5.0.1",
+    "web-vitals": "^2.1.4",
+    "winston": "^3.8.2"
   },
   "devDependencies": {
     "prettier": "2.7.1"
